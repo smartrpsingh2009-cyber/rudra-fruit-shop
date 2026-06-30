@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Panel | Rudra Fruit Shop</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <section id="loginView" class="login-shell">
+    <form id="loginForm" class="login-card">
+      <div class="brand"><span>RF</span><div><strong>Rudra Fruit Shop</strong><small>Admin Panel</small></div></div>
+      <h1>Admin Login</h1>
+      <p>Use the local admin login for this browser.</p>
+      <label>Email<input name="email" type="email" value="admin@rudrafruitshop.com" required></label>
+      <label>Password<input name="password" type="password" value="admin123" required></label>
+      <button type="submit">Login Securely</button>
+      <small id="loginHint"></small>
+    </form>
+  </section>
+  <section id="appView" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span>RF</span><div><strong>Rudra Fruit Shop</strong><small>Control Center</small></div></div>
+      <nav>
+        <button data-tab="dashboard" class="active">Dashboard</button><button data-tab="products">Products</button><button data-tab="orders">Orders</button><button data-tab="customers">Customers</button><button data-tab="inventory">Inventory</button><button data-tab="coupons">Coupons</button><button data-tab="reports">Reports</button><button data-tab="settings">Settings</button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><p id="modeText">Local mode</p><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><button id="themeBtn" type="button">Dark Mode</button><button id="logoutBtn" type="button">Logout</button></div></header>
+      <section id="dashboard" class="tab active"></section><section id="products" class="tab"></section><section id="orders" class="tab"></section><section id="customers" class="tab"></section><section id="inventory" class="tab"></section><section id="coupons" class="tab"></section><section id="reports" class="tab"></section><section id="settings" class="tab"></section>
+    </main>
+  </section>
+  <script src="admin.js"></script>
+</body>
+</html>
